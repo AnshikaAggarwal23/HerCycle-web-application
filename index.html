@@ -1,0 +1,546 @@
+<!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="HerCycle home">
+        <span class="brand-logo"><i data-lucide="recycle"></i></span>
+        <span class="brand-name">Her<span>Cycle</span></span>
+      </a>
+
+      <!-- Hamburger button (only visible on mobile) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <i data-lucide="menu"></i>
+      </button>
+      <link rel="stylesheet" href="style.css">
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#home" data-view="home">Home</a>
+        <a href="#browse" data-view="browse">Browse Resources</a>
+        <a href="#list" data-view="list">List a Resource</a>
+        <a href="#calculator" data-view="calculator">Savings Calculator</a>
+        <a href="#impact" data-view="impact">Impact Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         VIEW 1: HOME
+         ===================================================== -->
+    <section class="view" id="view-home">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow"><i data-lucide="sparkles"></i> Hackathon prototype · GTBIT</span>
+            <h1>Reuse Resources.<br><span class="grad-text">Reduce Costs.</span><br>Empower Women.</h1>
+            <p class="lead">
+              HerCycle connects women starting small businesses with affordable, reusable equipment and
+              materials that other people already own — to rent, borrow or buy.
+              No expensive new purchases needed to get started.
+            </p>
+            <div class="hero-actions">
+              <a href="#browse" class="btn btn-primary btn-lg"><i data-lucide="search"></i> Explore Resources</a>
+              <a href="#list" class="btn btn-outline btn-lg"><i data-lucide="plus-circle"></i> List a Resource</a>
+            </div>
+            <p class="tiny-note"><i data-lucide="info"></i> All listings and numbers in this prototype are fictional demo data.</p>
+          </div>
+
+          <!-- Decorative hero visual built with plain HTML/CSS (no external images needed) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="float-card fc-1">
+              <span class="fc-emoji">🧵</span>
+              <div><strong>Sewing machine</strong><small>₹500/month · Rent</small></div>
+            </div>
+            <div class="float-card fc-2">
+              <span class="fc-emoji">🍰</span>
+              <div><strong>Baking equipment</strong><small>₹300/day · Rent</small></div>
+            </div>
+            <div class="float-card fc-3">
+              <i data-lucide="piggy-bank"></i>
+              <div><strong>You could save</strong><small>₹6,000+ in 6 months*</small></div>
+            </div>
+            <div class="hero-circle"><i data-lucide="recycle"></i></div>
+            <p class="fc-footnote">*Illustrative example only</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem & Solution -->
+      <div class="container section">
+        <div class="section-head">
+          <h2>The problem we are solving</h2>
+          <p>Starting a business is expensive. Meanwhile, useful equipment sits unused in other homes.</p>
+        </div>
+        <div class="two-col">
+          <div class="info-card problem">
+            <span class="icon-bubble warn"><i data-lucide="wallet"></i></span>
+            <h3>The barrier</h3>
+            <p>Many women want to start a tailoring, baking or craft business but cannot afford a new sewing machine, oven or tools. Buying everything new can delay or stop a dream before it begins.</p>
+          </div>
+          <div class="info-card solution">
+            <span class="icon-bubble"><i data-lucide="handshake"></i></span>
+            <h3>The HerCycle solution</h3>
+            <p>A simple platform where people list equipment and materials they no longer need — and where women entrepreneurs can find them at a fraction of the cost, and see exactly how much they save.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <div class="band">
+        <div class="container section">
+          <div class="section-head">
+            <h2>How it works</h2>
+            <p>Three simple steps from idea to income.</p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <span class="step-num">1</span>
+              <span class="icon-bubble"><i data-lucide="search"></i></span>
+              <h3>Discover</h3>
+              <p>Search and filter reusable equipment and materials near you.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">2</span>
+              <span class="icon-bubble"><i data-lucide="calculator"></i></span>
+              <h3>Compare costs</h3>
+              <p>Use the savings calculator to see whether renting or buying is cheaper.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">3</span>
+              <span class="icon-bubble"><i data-lucide="rocket"></i></span>
+              <h3>Start earning</h3>
+              <p>Express interest, get your business going and track the impact of reuse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits (the three hackathon themes) -->
+      <div class="container section">
+        <div class="section-head">
+          <h2>Why HerCycle?</h2>
+          <p>One platform, three kinds of impact.</p>
+        </div>
+        <div class="benefits">
+          <div class="benefit">
+            <span class="icon-bubble teal"><i data-lucide="indian-rupee"></i></span>
+            <h3>FinTech</h3>
+            <p>Transparent rent-vs-buy calculations and savings estimates so every rupee is an informed choice.</p>
+          </div>
+          <div class="benefit">
+            <span class="icon-bubble"><i data-lucide="leaf"></i></span>
+            <h3>Sustainable Tech</h3>
+            <p>Extends the useful life of existing equipment and materials instead of creating new waste.</p>
+          </div>
+          <div class="benefit">
+            <span class="icon-bubble pink"><i data-lucide="heart-handshake"></i></span>
+            <h3>Women Empowerment</h3>
+            <p>Lowers the cost of entrepreneurship and helps women build income-generating businesses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo statistics -->
+      <div class="container section">
+        <div class="stats-panel">
+          <div class="stats-panel-head">
+            <h2>Platform activity</h2>
+            <span class="demo-pill"><i data-lucide="flask-conical"></i> Demo data</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat">
+              <span class="stat-value" id="home-stat-listed">0</span>
+              <span class="stat-label">Resources listed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="home-stat-reused">0</span>
+              <span class="stat-label">Resources reused</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="home-stat-saved">₹0</span>
+              <span class="stat-label">Estimated money saved</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="home-stat-waste">0 kg</span>
+              <span class="stat-label">Est. materials diverted from waste</span>
+            </div>
+          </div>
+          <p class="panel-note">These are sample figures for demonstration. HerCycle has no real users, verified listings or completed transactions yet.</p>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+      <div class="container section">
+        <div class="cta">
+          <h2>Ready to give resources a second life?</h2>
+          <p>Browse what is available or share something you no longer use.</p>
+          <div class="hero-actions center">
+            <a href="#browse" class="btn btn-light btn-lg">Explore Resources</a>
+            <a href="#list" class="btn btn-ghost btn-lg">List a Resource</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         VIEW 2: BROWSE RESOURCES
+         ===================================================== -->
+    <section class="view" id="view-browse">
+      <div class="container section">
+        <div class="page-head">
+          <h1>Browse Resources</h1>
+          <p>Find reusable equipment and materials to rent, borrow or buy. Sample listings are fictional demo data.</p>
+        </div>
+
+        <!-- Search and filters -->
+        <div class="filter-bar">
+          <label class="search-box">
+            <i data-lucide="search"></i>
+            <input type="search" id="search-input" placeholder="Search by name, description or location…" aria-label="Search resources">
+          </label>
+
+          <select id="category-filter" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <!-- More options are added by script.js -->
+          </select>
+
+          <div class="chip-group" id="type-filter" role="group" aria-label="Filter by availability type">
+            <button type="button" class="chip active" data-type="all">All</button>
+            <button type="button" class="chip" data-type="Rent">Rent</button>
+            <button type="button" class="chip" data-type="Borrow">Borrow</button>
+            <button type="button" class="chip" data-type="Buy">Buy</button>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+
+        <div class="grid" id="resource-grid"></div>
+
+        <!-- Shown when nothing matches -->
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="icon-bubble"><i data-lucide="package-search"></i></span>
+          <h3>No resources found</h3>
+          <p>Try a different search or clear the filters. You can also list a resource yourself!</p>
+          <div class="hero-actions center">
+            <button type="button" class="btn btn-outline" id="reset-filters">Clear filters</button>
+            <a href="#list" class="btn btn-primary">List a Resource</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         VIEW 3: LIST A RESOURCE
+         ===================================================== -->
+    <section class="view" id="view-list">
+      <div class="container section narrow">
+        <div class="page-head">
+          <h1>List a Resource</h1>
+          <p>Have equipment or materials sitting unused? Add them here and they will appear in Browse Resources instantly.</p>
+        </div>
+
+        <form id="listing-form" class="form-card" novalidate>
+          <div class="field">
+            <label for="f-name">Resource name <span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" maxlength="60" placeholder="e.g. Pressure cooker (10 L)">
+            <small class="field-error" data-error-for="name"></small>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-category">Category <span class="req">*</span></label>
+              <select id="f-category" name="category">
+                <option value="">Select a category</option>
+                <!-- Options are added by script.js -->
+              </select>
+              <small class="field-error" data-error-for="category"></small>
+            </div>
+            <div class="field">
+              <label for="f-type">Availability type <span class="req">*</span></label>
+              <select id="f-type" name="type">
+                <option value="">Select a type</option>
+                <option value="Rent">Rent</option>
+                <option value="Borrow">Borrow</option>
+                <option value="Buy">Buy</option>
+              </select>
+              <small class="field-error" data-error-for="type"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-description">Description <span class="req">*</span></label>
+            <textarea id="f-description" name="description" rows="4" maxlength="300" placeholder="Describe the condition, size, and anything the person should know (max 300 characters)"></textarea>
+            <small class="field-error" data-error-for="description"></small>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-price">Price (₹) <span class="req">*</span></label>
+              <input type="number" id="f-price" name="price" min="0" step="1" inputmode="numeric" placeholder="e.g. 500">
+              <small class="field-hint">Enter 0 for items that are free to borrow.</small>
+              <small class="field-error" data-error-for="price"></small>
+            </div>
+            <div class="field">
+              <label for="f-unit">Price is charged <span class="req">*</span></label>
+              <select id="f-unit" name="unit">
+                <option value="month">per month</option>
+                <option value="week">per week</option>
+                <option value="day">per day</option>
+                <option value="bundle">per bundle</option>
+                <option value="item">per item</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-location">Location <span class="req">*</span></label>
+            <input type="text" id="f-location" name="location" maxlength="60" placeholder="e.g. Janakpuri, Delhi">
+            <small class="field-error" data-error-for="location"></small>
+          </div>
+
+          <div class="field">
+            <label for="f-image">Image URL <span class="optional">(optional)</span></label>
+            <input type="url" id="f-image" name="image" placeholder="https://example.com/photo.jpg">
+            <small class="field-hint">If left empty (or if the image fails to load) a friendly placeholder is shown.</small>
+            <small class="field-error" data-error-for="image"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg"><i data-lucide="check-circle-2"></i> Add Listing</button>
+            <button type="reset" class="btn btn-ghost btn-lg" id="form-reset">Clear form</button>
+          </div>
+          <p class="tiny-note"><i data-lucide="info"></i> Listings are saved only in this browser (localStorage). This prototype has no accounts, verification or payments.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         VIEW 4: SAVINGS CALCULATOR
+         ===================================================== -->
+    <section class="view" id="view-calculator">
+      <div class="container section">
+        <div class="page-head">
+          <h1>Financial Savings Calculator</h1>
+          <p>Compare the cost of buying new equipment with renting it for the time you need it.</p>
+        </div>
+
+        <div class="calc-grid">
+          <!-- Inputs -->
+          <form id="calc-form" class="form-card" novalidate>
+            <h3 class="card-title"><i data-lucide="sliders-horizontal"></i> Your numbers</h3>
+
+            <div class="field">
+              <label for="c-buy">Cost of buying new equipment (₹) <span class="req">*</span></label>
+              <input type="number" id="c-buy" min="0" step="1" inputmode="numeric" value="12000">
+              <small class="field-error" data-error-for="c-buy"></small>
+            </div>
+
+            <div class="field">
+              <label for="c-rent">Rental cost per month (₹) <span class="req">*</span></label>
+              <input type="number" id="c-rent" min="0" step="1" inputmode="numeric" value="500">
+              <small class="field-error" data-error-for="c-rent"></small>
+            </div>
+
+            <div class="field">
+              <label for="c-months">Number of months you need it <span class="req">*</span></label>
+              <input type="number" id="c-months" min="1" step="1" inputmode="numeric" value="6">
+              <small class="field-error" data-error-for="c-months"></small>
+            </div>
+
+            <details class="extras">
+              <summary>Add optional extra costs</summary>
+              <div class="field">
+                <label for="c-buyextra">Extra one-time costs if buying (₹)</label>
+                <input type="number" id="c-buyextra" min="0" step="1" inputmode="numeric" value="0">
+                <small class="field-hint">e.g. delivery, installation, accessories</small>
+                <small class="field-error" data-error-for="c-buyextra"></small>
+              </div>
+              <div class="field">
+                <label for="c-rentextra">Extra one-time costs if renting (₹)</label>
+                <input type="number" id="c-rentextra" min="0" step="1" inputmode="numeric" value="0">
+                <small class="field-hint">e.g. deposit, transport</small>
+                <small class="field-error" data-error-for="c-rentextra"></small>
+              </div>
+            </details>
+          </form>
+
+          <!-- Results -->
+          <div class="calc-results-wrap">
+            <div class="empty-state small" id="calc-empty" hidden>
+              <span class="icon-bubble warn"><i data-lucide="alert-circle"></i></span>
+              <p>Please enter valid numbers to see your comparison.</p>
+            </div>
+
+            <div class="form-card" id="calc-results">
+              <h3 class="card-title"><i data-lucide="bar-chart-3"></i> Your comparison</h3>
+
+              <div class="verdict" id="calc-verdict"></div>
+
+              <div class="result-grid">
+                <div class="result-box">
+                  <span class="result-label">Total cost of buying</span>
+                  <span class="result-value" id="calc-buy-total">₹0</span>
+                </div>
+                <div class="result-box">
+                  <span class="result-label">Total rental cost</span>
+                  <span class="result-value" id="calc-rent-total">₹0</span>
+                </div>
+                <div class="result-box highlight">
+                  <span class="result-label" id="calc-savings-label">Potential savings from renting</span>
+                  <span class="result-value" id="calc-savings">₹0</span>
+                </div>
+              </div>
+
+              <!-- Simple bar chart made with HTML/CSS -->
+              <div class="bars" aria-label="Cost comparison chart">
+                <div class="bar-row">
+                  <span class="bar-name">Buy</span>
+                  <div class="bar-track"><div class="bar-fill buy" id="bar-buy" style="width:0%"></div></div>
+                  <span class="bar-val" id="bar-buy-val">₹0</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-name">Rent</span>
+                  <div class="bar-track"><div class="bar-fill rent" id="bar-rent" style="width:0%"></div></div>
+                  <span class="bar-val" id="bar-rent-val">₹0</span>
+                </div>
+              </div>
+
+              <p class="breakeven" id="calc-breakeven"></p>
+
+              <div class="formula-box">
+                <strong>How this is calculated</strong>
+                <ul>
+                  <li>Total rental cost = Monthly rental cost × Number of months (+ any extra rental costs you entered)</li>
+                  <li>Potential savings from renting = Purchase cost (+ any extra buying costs) − Total rental cost</li>
+                  <li>Deposits, transport, maintenance, resale value and other costs are <em>not</em> included unless you enter them under optional extra costs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         VIEW 5: IMPACT DASHBOARD
+         ===================================================== -->
+    <section class="view" id="view-impact">
+      <div class="container section">
+        <div class="page-head">
+          <h1>Impact Dashboard</h1>
+          <p>See the estimated effect of reuse. Starting figures are demo data and update when you list resources or record a simulated transaction.</p>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card">
+            <span class="icon-bubble"><i data-lucide="package"></i></span>
+            <span class="stat-value" id="imp-listed">0</span>
+            <span class="stat-label">Resources listed</span>
+          </div>
+          <div class="impact-card">
+            <span class="icon-bubble teal"><i data-lucide="repeat"></i></span>
+            <span class="stat-value" id="imp-reused">0</span>
+            <span class="stat-label">Resources reused</span>
+          </div>
+          <div class="impact-card">
+            <span class="icon-bubble gold"><i data-lucide="piggy-bank"></i></span>
+            <span class="stat-value" id="imp-saved">₹0</span>
+            <span class="stat-label">Estimated money saved</span>
+          </div>
+          <div class="impact-card">
+            <span class="icon-bubble"><i data-lucide="leaf"></i></span>
+            <span class="stat-value" id="imp-waste">0 kg</span>
+            <span class="stat-label">Est. materials diverted from waste</span>
+          </div>
+        </div>
+
+        <div class="assumptions">
+          <h3><i data-lucide="info"></i> Assumptions behind these numbers</h3>
+          <ul>
+            <li><strong>Starting values are demo data:</strong> 14 reused resources and ₹18,500 saved are made-up sample figures.</li>
+            <li><strong>Waste diverted:</strong> we assume an average of <strong id="waste-assumption">3</strong> kg of equipment or material per reused resource. This is a rough illustrative assumption, not a measured value.</li>
+            <li><strong>Money saved:</strong> for simulated transactions, savings = cost of buying new − amount paid on HerCycle (never below ₹0).</li>
+            <li>We do <strong>not</strong> claim any carbon-emission reductions.</li>
+          </ul>
+        </div>
+
+        <div class="two-col top-gap">
+          <!-- Simulated transaction -->
+            <form id="sim-form" class="form-card" novalidate>
+            <h3 class="card-title"><i data-lucide="flask-conical"></i> Record a simulated transaction</h3>
+            <p class="muted">Try it out! This only updates the numbers above. No real payment, booking or transaction takes place.</p>
+
+            <div class="field">
+              <label form="sim-listing">Resource <span class="req">*</span></label>
+              <select id="sim-listing" name="sim-listing"></select>
+              <small class="field-error" data-error-for="sim-listing"></small>
+            </div>
+            <div class="field">
+              <label for="sim-newcost">What would it cost to buy this new? (₹) <span class="req">*</span></label>
+              <input type="number" id="sim-newcost" min="1" step="1" inputmode="numeric" placeholder="e.g. 8000">
+              <small class="field-error" data-error-for="sim-newcost"></small>
+            </div>
+            <div class="field">
+              <label for="sim-periods">How many days / weeks / months (matching the listing)? <span class="req">*</span></label>
+              <input type="number" id="sim-periods" min="1" step="1" inputmode="numeric" value="1">
+              <small class="field-hint">For "Buy" listings this is treated as 1.</small>
+              <small class="field-error" data-error-for="sim-periods"></small>
+            </div>
+            <button type="submit" class="btn btn-primary"><i data-lucide="plus"></i> Record simulated reuse</button>
+            <p class="sim-result" id="sim-result" aria-live="polite"></p>
+          </form>
+
+          <!-- Interest requests -->
+          <div class="form-card">
+            <h3 class="card-title"><i data-lucide="inbox"></i> Simulated interest requests</h3>
+            <p class="muted">Created when you click “I'm Interested” on a resource. These are simulated only.</p>
+            <ul class="interest-list" id="interest-list"></ul>
+            <div class="empty-state small" id="interest-empty">
+              <p>No interest requests yet. Open a resource in Browse Resources and click “I'm Interested”.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reset-row">
+          <button type="button" class="btn btn-ghost" id="reset-demo"><i data-lucide="rotate-ccw"></i> Reset all demo data</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RESOURCE DETAILS MODAL ========== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close details"><i data-lucide="x"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Small pop-up message -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand light">
+          <span class="brand-logo"><i data-lucide="recycle"></i></span>
+          <span class="brand-name">Her<span>Cycle</span></span>
+        </div>
+        <p>Reuse Resources. Reduce Costs. Empower Women.</p>
+      </div>
+      <p class="footer-note">
+        Hackathon prototype built at GTBIT for the Sustainable Tech, FinTech and Women Empowerment themes.
+        All sample data is fictional. No real users, verified listings, payments or bookings.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

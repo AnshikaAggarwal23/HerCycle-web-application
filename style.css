@@ -1,0 +1,1161 @@
+
+/* ==========================================
+   HERCYCLE
+   Dark Futuristic Purple Theme
+   Sustainable Tech + FinTech
+   ========================================== */
+
+/* 1. THEME VARIABLES */
+
+:root {
+  --primary: #8B45FF;
+  --primary-dark: #6928D9;
+  --primary-light: #D9B8FF;
+
+  --bg: #120519;
+  --surface: #21102B;
+  --surface-alt: #2B1538;
+
+  --text: #FAF7FF;
+  --text-muted: #C2B2D0;
+
+  --border: rgba(218, 183, 255, 0.22);
+  --accent: #FF6B9A;
+  --teal: #48D6C5;
+
+  --success: #66D9B0;
+  --danger: #FF7185;
+
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 14px 36px rgba(139, 69, 255, 0.18);
+
+  --radius: 18px;
+  --transition: 0.25s ease;
+
+  --font-head: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* 2. RESET AND BASE */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      ellipse at 80% 0%,
+      rgba(108, 43, 255, 0.16),
+      transparent 45%
+    ),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--text);
+  font-family: var(--font-head);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+p,
+li,
+label {
+  color: var(--text-muted);
+}
+
+::selection {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+/* 3. COMMON LAYOUT */
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+section {
+  padding-block: 64px;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading p {
+  max-width: 650px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* 4. GRADIENT TEXT */
+
+.grad-text {
+  background: linear-gradient(
+    90deg,
+    #FFFFFF,
+    #B987FF,
+    #FF8FB5
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 5. HEADER */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(18, 5, 25, 0.90);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #8B45FF, #D9B8FF);
+  color: #FFFFFF;
+  box-shadow: 0 5px 20px rgba(139, 69, 255, 0.3);
+}
+
+.brand-name,
+.site-nav a {
+  color: var(--text);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-nav a {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.94rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  background: rgba(139, 69, 255, 0.18);
+  color: #FFFFFF;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* 6. BUTTONS */
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 11px 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-weight: 650;
+  text-align: center;
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8B45FF, #6928D9);
+  color: #FFFFFF;
+  border-color: rgba(218, 183, 255, 0.25);
+  box-shadow: 0 6px 22px rgba(139, 69, 255, 0.22);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #A56BFF, #793BEB);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background: #6928D9;
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-light);
+  border-color: var(--primary);
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  background: rgba(139, 69, 255, 0.18);
+  color: #FFFFFF;
+  border-color: var(--primary-light);
+}
+
+button:disabled,
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+button:focus-visible,
+.btn:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+/* 7. HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 88px 76px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 30px;
+  right: -100px;
+  border-radius: 50%;
+  background: rgba(139, 69, 255, 0.13);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  margin: 18px 0;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.demo-pill,
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(139, 69, 255, 0.18);
+  color: #E2CCFF;
+  font-size: 0.82rem;
+  font-weight: 650;
+  border: 1px solid rgba(218, 183, 255, 0.15);
+}
+
+/* 8. GRIDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* 9. CARDS */
+
+.info-card,
+.benefit,
+.step,
+.stats-panel,
+.resource-card,
+.form-card,
+.impact-card,
+.card,
+.calculator-card,
+.stat-card,
+.hero-panel {
+  min-width: 0;
+  background: linear-gradient(145deg, #291535, #1B0C24);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.info-card,
+.benefit,
+.step,
+.resource-card,
+.form-card,
+.impact-card,
+.card,
+.calculator-card,
+.stat-card,
+.hero-panel {
+  padding: 24px;
+}
+
+.info-card:hover,
+.benefit:hover,
+.step:hover,
+.resource-card:hover,
+.impact-card:hover,
+.card:hover,
+.stat-card:hover {
+  border-color: rgba(183, 133, 255, 0.55);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.icon-bubble {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  background: rgba(139, 69, 255, 0.17);
+  color: var(--primary-light);
+}
+
+.icon-bubble.pink {
+  background: rgba(255, 107, 154, 0.15);
+  color: #FF9FBE;
+}
+
+.icon-bubble.teal {
+  background: rgba(72, 214, 197, 0.13);
+  color: var(--teal);
+}
+
+.card-media {
+  min-height: 130px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #351747, #1A0B25);
+  color: var(--primary-light);
+}
+
+/* 10. RESOURCE CARDS */
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resource-card h3 {
+  margin: 0;
+}
+
+.price,
+.resource-card .price {
+  color: var(--primary-light);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.resource-card .btn,
+.resource-card button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.resource-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resource-meta span,
+.category-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(72, 214, 197, 0.12);
+  color: var(--teal);
+  font-size: 0.8rem;
+}
+
+/* 11. FORMS */
+
+.form-card {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+input,
+select,
+textarea,
+.search-box {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  background: #1B0C24;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #A996B9;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.search-box:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(139, 69, 255, 0.15);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  min-height: auto;
+}
+
+/* 12. SEARCH AND FILTERS */
+
+.search-controls {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* 13. CALCULATOR */
+
+.calculator-card {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.calc-result {
+  margin-top: 22px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 69, 255, 0.18),
+    rgba(72, 214, 197, 0.08)
+  );
+  border: 1px solid var(--border);
+}
+
+.calc-result .amount,
+.stat-value {
+  color: var(--primary-light);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 850;
+}
+
+.calc-result .saving {
+  color: var(--teal);
+}
+
+/* 14. IMPACT DASHBOARD */
+
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 24px;
+}
+
+.stat-card {
+  padding: 22px;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.impact-highlight {
+  border-color: rgba(72, 214, 197, 0.35);
+  background: linear-gradient(
+    145deg,
+    rgba(72, 214, 197, 0.10),
+    #1B0C24
+  );
+}
+
+.impact-highlight .stat-value {
+  color: var(--teal);
+}
+
+/* 15. MODALS */
+
+.modal,
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(8, 2, 12, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  width: min(560px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-hover);
+}
+
+.modal[hidden],
+.modal-overlay[hidden] {
+  display: none !important;
+}
+
+/* 16. TOAST MESSAGES */
+
+.toast {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1200;
+  max-width: min(380px, calc(100vw - 44px));
+  padding: 15px 20px;
+  background: #2B1538;
+  color: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-hover);
+}
+
+.toast.success {
+  border-color: var(--success);
+}
+
+.toast.error {
+  border-color: var(--danger);
+}
+
+/* 17. FOOTER */
+
+.site-footer {
+  margin-top: 40px;
+  padding: 42px 0;
+  background: #0C0311;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p,
+.site-footer a {
+  color: var(--text-muted);
+}
+
+.site-footer a:hover {
+  color: var(--primary-light);
+}
+
+/* 18. SINGLE-PAGE VIEW VISIBILITY */
+
+.view[hidden],
+.page-view[hidden] {
+  display: none !important;
+}
+
+/* 19. RESPONSIVE TABLETS */
+
+@media (max-width: 900px) {
+  .grid,
+  .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding-block: 64px;
+  }
+}
+
+/* 20. RESPONSIVE MOBILE */
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  section {
+    padding-block: 44px;
+  }
+
+  .navbar {
+    min-height: 66px;
+    flex-wrap: wrap;
+  }
+
+  #menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 16px;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px 14px;
+  }
+
+  .hero {
+    padding-block: 52px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3.5rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .grid,
+  .grid-2,
+  .resource-grid,
+  .form-grid,
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .search-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card,
+  .benefit,
+  .step,
+  .resource-card,
+  .form-card,
+  .impact-card,
+  .card,
+  .calculator-card {
+    padding: 20px;
+  }
+
+  .modal-content {
+    padding: 22px;
+  }
+}
+
+/* 21. ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== HERCYCLE SPACING FIX ===== */
+
+section {
+  padding: 56px 0;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.grid,
+.grid-2,
+.resource-grid {
+  gap: 24px;
+}
+
+.info-card,
+.benefit,
+.step,
+.resource-card,
+.form-card,
+.impact-card,
+.card,
+.calculator-card {
+  padding: 24px;
+}
+
+.hero h1 {
+  margin: 20px 0;
+}
+
+.hero p {
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  gap: 14px;
+}
+
+button,
+.btn {
+  line-height: 1.4;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+.form-grid {
+  row-gap: 20px;
+}
+
+@media (max-width: 680px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .grid,
+  .grid-2,
+  .resource-grid {
+    gap: 16px;
+  }
+
+  .info-card,
+  .benefit,
+  .step,
+  .resource-card,
+  .form-card,
+  .impact-card,
+  .card,
+  .calculator-card {
+    padding: 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+}
+
+/* ===== BUTTON AND EDGE SPACING FIX ===== */
+
+/* Keep content away from the edges */
+.container {
+  width: calc(100% - 40px);
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prevent buttons from touching each other */
+.hero-actions,
+.button-group,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Give buttons comfortable spacing */
+button,
+.btn,
+a.btn {
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* Stop cards and form fields from overflowing */
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .hero-actions,
+  .button-group,
+  .actions {
+    gap: 10px;
+  }
+}
+
+/* ===== HERCYCLE: SPACING + FONT FIX ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.container {
+  width: min(1100px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* Space between sections */
+section {
+  padding-block: 64px;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+/* Cards and grids */
+.grid,
+.grid-2,
+.resource-grid,
+.form-grid {
+  gap: 24px;
+}
+
+.info-card,
+.benefit,
+.step,
+.resource-card,
+.form-card,
+.impact-card,
+.card,
+.calculator-card {
+  min-width: 0;
+  padding: 26px;
+  overflow-wrap: anywhere;
+}
+
+/* Buttons: prevent touching and overlapping */
+.hero-actions,
+.button-group,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+button,
+.btn,
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  padding: 12px 20px;
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  section {
+    padding-block: 42px;
+  }
+
+  .grid,
+  .grid-2,
+  .resource-grid,
+  .form-grid {
+    gap: 16px;
+  }
+
+  .info-card,
+  .benefit,
+  .step,
+  .resource-card,
+  .form-card,
+  .impact-card,
+  .card,
+  .calculator-card {
+    padding: 18px;
+  }
+
+  .hero-actions,
+  .button-group,
+  .actions {
+    gap: 12px;
+  }
+}
+
+/* Space between boxes and the next heading */
+.info-card,
+.benefit,
+.step,
+.resource-card,
+.form-card,
+.impact-card,
+.card,
+.calculator-card {
+  margin-bottom: 28px;
+}
+
+/* Add breathing room before section headings */
+section h2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* Keep section content from feeling cramped */
+section {
+  padding-bottom: 64px;
+}
+
+@media (max-width: 600px) {
+  .info-card,
+  .benefit,
+  .step,
+  .resource-card,
+  .form-card,
+  .impact-card,
+  .card,
+  .calculator-card {
+    margin-bottom: 18px;
+  }
+}
+
+/* ===== FIX HER CYCLE PAGE NAVIGATION ===== */
+
+/* Hide every page by default */
+.view {
+  display: none;
+}
+
+/* Show only the selected page */
+.view.active {
+  display: block;
+}
